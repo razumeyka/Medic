@@ -1,0 +1,573 @@
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUI.woff') format('woff'), url('../fonts/SegoeUI.ttf')  format('truetype'), url('../fonts/SegoeUI.svg#SegoeUI') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUI-Bold.woff') format('woff'), url('../fonts/SegoeUI-Bold.ttf')  format('truetype'), url('../fonts/SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUI-Light.woff') format('woff'), url('../fonts/SegoeUI-Light.ttf')  format('truetype'), url('../fonts/SegoeUI-Light.svg#SegoeUI-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SegoeUI';
+  src: url('../fonts/SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),  url('../fonts/SegoeUI-Semibold.woff') format('woff'), url('../fonts/SegoeUI-Semibold.ttf')  format('truetype'), url('../fonts/SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}
+
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'основной шрифт', sans-serif;
+	font-size: 14px;
+	line-height:1.4;
+	color: rgb(0, 0, 0);
+	min-width: 360px;
+}
+
+.wrapper {
+     max-width:1200px;
+     padding:0 40px;
+     margin:0 auto;
+}
+
+header {
+    background-color: #000082;
+    padding: 10px 0;
+    height: 100px;
+}
+
+header .logo {
+    background-image: url(../img/logo.svg);
+    background-size: 800px;
+    background-position: -1px -5px;
+    width: 210px;
+    height: 100px;
+    float: left;
+}
+
+header .phones {
+    text-align: left;
+    padding: 7px 10px 7px 30px;
+    border-left: 1px solid #ffffff;
+    overflow: hidden;
+}
+
+header .phones a {
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'SegoeUI';
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    line-height: 0.75;
+    letter-spacing: 1.8px;
+}
+
+header .phones .free {
+    font-size: 14px;
+    font-family: 'SegoeUI';
+    color: rgb(255, 255, 255);
+    padding-bottom: 15px;
+    letter-spacing: 0.8px;
+}
+
+/*main_screen*/
+
+.main_screen {
+    background-image: url(../img/background_clinic.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 80px 0 100px;
+    position: relative;
+}
+
+.main_screen h1 {
+    font-size: 28px;
+    font-weight: 600;
+    font-family: 'SegoeUI';
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    max-width: 500px;
+    letter-spacing: 1.3px;
+}
+
+.main_screen h2 {
+    font-size: 22px;
+    font-weight: 300;
+    font-family: 'SegoeUI';
+    max-width: 520px;
+    letter-spacing: 1.3px;
+}
+
+.main_screen .diploma {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: "Segoe";
+    color: rgb(180, 0, 0);
+    padding: 10px 0 30px;
+    letter-spacing: 2.1px;
+}
+
+.main_screen img {
+    border: 8px solid #ffffff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    max-width: 354px;
+    height: 237px;
+}
+
+/*first form*/
+
+.form_screen {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    padding: 50px 30px;
+    max-width: 522px;
+    overflow: hidden;
+}
+
+.form_screen .application {
+    font-size: 26px;
+    font-family: "Segoe UI";
+    color: rgb(0, 0, 130);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 0.692;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: 1.3px;
+}
+
+.form_screen .field .label {
+    font-size: 18px;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    color: rgb(0, 0, 130);
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 15px 52px 18px;
+    letter-spacing: 1px;
+    position: relative;
+    border-bottom: 1px solid rgb(154, 154, 154);
+    margin: 25px 0 15px;
+}
+
+.form_screen .field .label::before {
+    content: "";
+    background: url(../img/logo.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.form_screen .courses_type .label::before {
+    background-position: -4px -170px;
+}
+
+.form_screen .contract_type .label::before {
+    background-position: -60px -170px;
+}
+
+.form_screen .training_length .label::before {
+    background-position: -120px -170px;
+}
+
+.form_screen .field .wpcf7-list-item {
+    display: inline-block;
+    padding: 10px 16px 10px 0;
+    letter-spacing: 0.8px;
+}
+
+.form_screen .wpcf7-list-item .wpcf7-list-item-label {
+    font-size: 15px;
+    font-family: "Segoe UI";
+    color: rgb(91, 91, 91);
+    line-height: 1.2;
+    text-align: left;
+}
+
+/*radio_button*/
+
+.form_screen .wpcf7-list-item input[type="radio"] {
+    display: none;
+}
+
+.form_screen .wpcf7-list-item .radio_ripple {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid rgb(109, 109, 109);
+    position: relative;
+    margin: 0 8px 0 20px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    vertical-align: middle;
+    -webkit-transition: border-color 0.2s ease-in 0s;
+    transition: border-color 0.2s ease-in 0s;
+}
+
+.form_screen .wpcf7-list-item .radio_ripple:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+    margin: auto;
+    width: 20px;
+    height: 20px;
+    background: #000082;
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: all 0.2s ease-in 0s;
+    transition: all 0.2s ease-in 0s;
+}
+
+.form_screen .wpcf7-list-item .radio_ripple:after {
+    content: '';
+    position: absolute;
+    top: -15px;
+    bottom: -15px;
+    left: -15px;
+    right: -15px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    background: rgba(0, 0, 130, 0.26);
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.form_screen .field .wpcf7-list-item.active .radio_ripple{
+	border-color:#000082;
+}
+
+.form_screen .field .wpcf7-list-item.active .radio_ripple:before{
+	-webkit-transform: scale(.5);
+	transform: scale(.5);
+}
+
+.form_screen .field .wpcf7-list-item.active .radio_ripple:after{
+	-webkit-animation: ripple 0.3s ease-out;
+	animation: ripple 0.3s ease-out;
+}
+
+@-webkit-keyframes ripple {
+	from {width:0;height:0;opacity:1;}
+	to {width:47px;height:47px;opacity:0;}
+}
+@keyframes ripple {
+	from {width:0;height:0;opacity:1;}
+	to {width:47px;height:47px;opacity:0;}
+}
+
+.form_screen .button {
+    display: block;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(130, 0, 0);
+    max-width: 240px;
+    height: 65px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: left;
+    padding: 0 0 4px 0;
+    margin: 50px 0 40px;
+}
+
+.form_screen .button .inner {
+    box-sizing: border-box;
+    background-color: rgb(180, 0, 0);
+    font-size: 18px;
+    font-family: "Segoe UI";
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 2px;
+    padding: 22px 15px;
+    width: 100%;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+.form_screen .learn.button .inner::after {
+    content: "";
+    background: url(../img/logo.svg);
+    background-position: -350px -180px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    right: 20px;
+    top: 19px;
+}
+
+/*second form*/
+
+.form_screen .terms_and_prices {
+    border: 2px solid rgb(180, 0, 0);
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 40px 0 28px;
+}
+
+.form_screen .terms_and_prices .terms {
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: rgb(91, 91, 91);
+    line-height: 1.2;
+    text-align: left;
+    padding: 20px 20px 15px;
+    max-width: 180px;
+}
+
+.form_screen .terms_and_prices .terms .term {
+    padding: 5px 10px 10px 30px;
+    position: relative;
+}
+
+.form_screen .terms_and_prices .terms .term::before {
+    content: "";
+    background: url(../img/logo.svg);
+    background-position: -482px -183px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 5px; 
+}
+
+.form_screen .terms_and_prices .prices {
+    box-sizing: border-box;
+    background-color: rgb(180, 0, 0);
+    font-size: 14px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 22px 17px 15px;
+    width: 260px;
+}
+
+.form_screen .terms_and_prices .prices .price {
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 0.8px;
+}
+
+.form_screen .terms_and_prices .prices .price span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.form_screen .terms_and_prices .prices .discount {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px 20px;
+}
+
+.form_screen .terms_and_prices .prices .discount .text {
+    font-size: 14px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    line-height: 1.286;
+    text-align: center;
+    max-width: 170px;
+}
+
+.form_screen .terms_and_prices .discount .discount_price {
+    font-size: 38px;
+    font-family: "Segoe UI";
+    font-weight: 600;
+    line-height: 0.474;
+    padding: 20px 0 17px;
+}
+
+.form_screen .terms_and_prices .discount .discount_price span {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.form_screen .name .wpcf7-form-control, .form_screen .number .wpcf7-form-control, .form_screen .email .wpcf7-form-control {
+    box-sizing: border-box;
+    border: 1px solid rgb(203, 203, 203);
+    height: 50px;
+    margin: 10px 0;
+    padding-left: 65px;
+    width: 100%;
+    font-size: 15px;
+    font-family: "Segoe UI";
+    font-weight: 400;
+    color: rgb(106, 106, 106);
+    text-align: left;  
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.form_screen .name, .form_screen .number, .form_screen .email {
+    position: relative;
+}
+
+.form_screen .name .wpcf7-form-control-wrap::before, .form_screen .number .wpcf7-form-control-wrap::before, .form_screen .email .wpcf7-form-control-wrap::before  {
+    content: "";
+    background: url(../img/logo.svg);
+    border-right: 1px solid rgb(203, 203, 203);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+.form_screen .name .wpcf7-form-control-wrap::before {
+    background-position: -175px -170px;
+}
+
+.form_screen .number .wpcf7-form-control-wrap::before {
+    background-position: -233px -170px;
+}
+
+.form_screen .email .wpcf7-form-control-wrap::before {
+    background-position: -290px -170px;
+}
+
+.form_screen .calculate.button {
+    width: 50%;
+    text-align: center;
+    float: left;
+    padding: 0 0 4px;
+    margin: 80px 0 40px;
+}
+
+.form_screen .back.button {
+    float: right;
+    border-radius: 2px;
+    background-color: rgb(221, 221, 221);
+    position: absolute;
+    width: 50%;
+    max-width: 209px;
+    height: 61px;
+    font-size: 18px;
+    font-family: "Segoe UI";
+    color: rgb(101, 101, 101);
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    padding: 20px;
+    text-align: right;
+    position: relative;
+    letter-spacing: 1px;
+    margin: 80px 0 40px;
+} 
+
+.form_screen .back.button::after {
+    content: "";
+    background: url(../img/logo.svg);
+    background-position: -400px -180px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+/*media*/
+
+@media screen and (max-width: 1279px) {
+    .wrapper {
+        padding: 0 15px;
+    }
+    
+    .main_screen h1, .main_screen h2, .main_screen .diploma {
+        max-width: 1279px;
+    }
+    
+    .main_screen img {
+        width: 100%;
+    }
+
+    .form_screen {
+        position: static;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header {
+        height: 200px;
+    }
+
+    header .logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    header .phones {
+        border-left: none;
+        padding-top: 20px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    .form_screen .terms_and_prices {
+        flex-direction: column;
+    }
+    
+    .form_screen .terms_and_prices .prices {
+        width: 100%;
+    }
+    
+    .form_screen .terms_and_prices .terms {
+        max-width: 500px;
+    }
+    
+    .form_screen .terms_and_prices .prices .discount .text {
+        max-width: 500px;
+    }
+    
+    .form_screen .calculate.button {
+        float: none;
+        margin: 50px 0 0;
+        width: 100%;
+    }
+    
+    .form_screen .back.button {
+        float: none;
+        margin: 30px 0 50px;
+        width: 100%;
+        max-width: 240px;
+    }
+}
+
+
+
+
+
+
+
+
