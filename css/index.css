@@ -29,9 +29,10 @@
 body{
 	margin:0;
 	padding: 0;
-	font-family: 'основной шрифт', sans-serif;
-	font-size: 14px;
+	font-family: 'SegoeUI', sans-serif;
+	font-size: 15px;
 	line-height:1.4;
+    letter-spacing: 0.05em;
 	color: rgb(0, 0, 0);
 	min-width: 360px;
 }
@@ -45,86 +46,91 @@ body{
 header {
     background-color: #000082;
     padding: 10px 0;
-    height: 100px;
 }
 
 header .logo {
+    display: inline-block;
+    vertical-align: middle;
     background-image: url(../img/logo.svg);
-    background-size: 800px;
     background-position: -1px -5px;
     width: 210px;
     height: 100px;
-    float: left;
+    margin-left: -35px;
 }
 
 header .phones {
+    display: inline-block;
+    vertical-align: middle;
     text-align: left;
     padding: 7px 10px 7px 30px;
-    border-left: 1px solid #ffffff;
+    border-left: 2px solid #ffffff;
     overflow: hidden;
 }
 
 header .phones a {
     text-decoration: none;
     font-size: 24px;
-    font-family: 'SegoeUI';
     color: rgb(255, 255, 255);
     text-transform: uppercase;
-    line-height: 0.75;
-    letter-spacing: 1.8px;
 }
 
 header .phones .free {
     font-size: 14px;
-    font-family: 'SegoeUI';
     color: rgb(255, 255, 255);
     padding-bottom: 15px;
-    letter-spacing: 0.8px;
 }
 
 /*main_screen*/
 
 .main_screen {
     background-image: url(../img/background_clinic.jpg);
-    background-size: cover;
-    background-position: center center;
+    background-size: 100% auto;
+	background-position: center top;
+    background-repeat: no-repeat;
     padding: 80px 0 100px;
-    position: relative;
+}
+
+.main_screen .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_screen .text {
+    max-width: 520px;
 }
 
 .main_screen h1 {
     font-size: 28px;
     font-weight: 600;
-    font-family: 'SegoeUI';
     text-transform: uppercase;
     text-align: left;
     margin: 0;
-    max-width: 500px;
-    letter-spacing: 1.3px;
 }
 
 .main_screen h2 {
     font-size: 22px;
     font-weight: 300;
-    font-family: 'SegoeUI';
-    max-width: 520px;
-    letter-spacing: 1.3px;
+}
+
+.main_screen h2 span {
+    font-weight: 600;
 }
 
 .main_screen .diploma {
     font-size: 22px;
     font-weight: 400;
-    font-family: "Segoe";
     color: rgb(180, 0, 0);
     padding: 10px 0 30px;
-    letter-spacing: 2.1px;
 }
 
-.main_screen img {
+.main_screen .diploma_example {
     border: 8px solid #ffffff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-    max-width: 354px;
-    height: 237px;
+}
+
+.main_screen .diploma_example img {
+     max-width: 354px;
 }
 
 /*first form*/
@@ -133,35 +139,27 @@ header .phones .free {
     background-color: rgb(255, 255, 255);
     box-sizing: border-box;
     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 20px;
-    right: 50px;
     padding: 50px 30px;
     max-width: 522px;
     overflow: hidden;
+    margin-top: -180px;
 }
 
 .form_screen .application {
     font-size: 26px;
-    font-family: "Segoe UI";
     color: rgb(0, 0, 130);
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 0.692;
     text-align: center;
     margin-bottom: 40px;
-    letter-spacing: 1.3px;
 }
 
 .form_screen .field .label {
     font-size: 18px;
-    font-family: "Segoe UI";
     font-weight: 600;
     color: rgb(0, 0, 130);
     text-transform: uppercase;
-    line-height: 1;
     padding: 15px 52px 18px;
-    letter-spacing: 1px;
     position: relative;
     border-bottom: 1px solid rgb(154, 154, 154);
     margin: 25px 0 15px;
@@ -192,14 +190,11 @@ header .phones .free {
 .form_screen .field .wpcf7-list-item {
     display: inline-block;
     padding: 10px 16px 10px 0;
-    letter-spacing: 0.8px;
 }
 
 .form_screen .wpcf7-list-item .wpcf7-list-item-label {
     font-size: 15px;
-    font-family: "Segoe UI";
     color: rgb(91, 91, 91);
-    line-height: 1.2;
     text-align: left;
 }
 
@@ -281,38 +276,26 @@ header .phones .free {
 }
 
 .form_screen .button {
-    display: block;
+    position: relative;
+    display:inline-block;
+    background-color: rgb(180, 0, 0);
     box-sizing: border-box;
-    border: none;
+    box-shadow: 0 4px rgb(130, 0, 0);
     border-radius: 2px;
-    background-color: rgb(130, 0, 0);
-    max-width: 240px;
     height: 65px;
     cursor: pointer;
-    text-decoration: none;
-    text-align: left;
-    padding: 0 0 4px 0;
-    margin: 50px 0 40px;
-}
-
-.form_screen .button .inner {
-    box-sizing: border-box;
-    background-color: rgb(180, 0, 0);
     font-size: 18px;
-    font-family: "Segoe UI";
     color: rgb(255, 255, 255);
     font-weight: 700;
     text-transform: uppercase;
-    line-height: 1;
-    border-radius: 2px;
+    text-decoration: none;
+    text-align: left;
     padding: 22px 15px;
-    width: 100%;
-    position: relative;
-    letter-spacing: 1px;
+    margin: 50px 0 40px;
 }
 
-.form_screen .learn.button .inner::after {
-    content: "";
+.form_screen .button .arrow {
+    display: block;
     background: url(../img/logo.svg);
     background-position: -350px -180px;
     width: 50px;
@@ -333,7 +316,6 @@ header .phones .free {
 
 .form_screen .terms_and_prices .terms {
     font-size: 15px;
-    font-family: "Segoe UI";
     font-weight: 400;
     color: rgb(91, 91, 91);
     line-height: 1.2;
@@ -350,7 +332,7 @@ header .phones .free {
 .form_screen .terms_and_prices .terms .term::before {
     content: "";
     background: url(../img/logo.svg);
-    background-position: -482px -183px;
+    background-position: -480px -183px;
     width: 30px;
     height: 30px;
     position: absolute;
@@ -362,7 +344,6 @@ header .phones .free {
     box-sizing: border-box;
     background-color: rgb(180, 0, 0);
     font-size: 14px;
-    font-family: "Segoe UI";
     font-weight: 400;
     color: rgb(255, 255, 255);
     text-align: center;
@@ -372,18 +353,19 @@ header .phones .free {
 
 .form_screen .terms_and_prices .prices .price {
     font-size: 15px;
-    font-family: "Segoe UI";
     font-weight: 400;
     text-transform: uppercase;
-    line-height: 1.2;
     text-align: center;
     margin-bottom: 20px;
-    letter-spacing: 0.8px;
 }
 
-.form_screen .terms_and_prices .prices .price span {
+.form_screen .terms_and_prices .prices .price .sum {
     font-size: 22px;
     font-weight: 600;
+}
+
+.form_screen .terms_and_prices .prices .price .rub {
+    font-size: 14px;
 }
 
 .form_screen .terms_and_prices .prices .discount {
@@ -393,24 +375,20 @@ header .phones .free {
 
 .form_screen .terms_and_prices .prices .discount .text {
     font-size: 14px;
-    font-family: "Segoe UI";
     font-weight: 400;
-    line-height: 1.286;
     text-align: center;
     max-width: 170px;
 }
 
 .form_screen .terms_and_prices .discount .discount_price {
     font-size: 38px;
-    font-family: "Segoe UI";
     font-weight: 600;
-    line-height: 0.474;
     padding: 20px 0 17px;
 }
 
 .form_screen .terms_and_prices .discount .discount_price span {
-  font-size: 20px;
-  text-transform: uppercase;
+    font-size: 20px;
+    text-transform: uppercase;
 }
 
 .form_screen .name .wpcf7-form-control, .form_screen .number .wpcf7-form-control, .form_screen .email .wpcf7-form-control {
@@ -421,12 +399,14 @@ header .phones .free {
     padding-left: 65px;
     width: 100%;
     font-size: 15px;
-    font-family: "Segoe UI";
     font-weight: 400;
     color: rgb(106, 106, 106);
     text-align: left;  
-    letter-spacing: 1px;
     outline: none;
+}
+
+.form_screen input:not([type=submit]):focus {
+	border: 1px solid #000082;
 }
 
 .form_screen .name, .form_screen .number, .form_screen .email {
@@ -457,41 +437,26 @@ header .phones .free {
 }
 
 .form_screen .calculate.button {
+    border: none;
     width: 50%;
     text-align: center;
     float: left;
-    padding: 0 0 4px;
     margin: 80px 0 40px;
 }
 
 .form_screen .back.button {
     float: right;
-    border-radius: 2px;
     background-color: rgb(221, 221, 221);
-    position: absolute;
+    box-shadow: none;
     width: 50%;
-    max-width: 209px;
     height: 61px;
-    font-size: 18px;
-    font-family: "Segoe UI";
     color: rgb(101, 101, 101);
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1;
-    padding: 20px;
     text-align: right;
-    position: relative;
-    letter-spacing: 1px;
     margin: 80px 0 40px;
 } 
 
-.form_screen .back.button::after {
-    content: "";
-    background: url(../img/logo.svg);
+.form_screen .back.button .arrow{
     background-position: -400px -180px;
-    width: 50px;
-    height: 30px;
-    position: absolute;
     left: 10px;
     top: 15px;
 }

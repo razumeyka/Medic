@@ -6,4 +6,14 @@ $(document).ready(function(){
         $(this).addClass('active');
         $(this).parent().addClass('changed');
     });
+    
+    var slideNow = 1;   
+    var slideCount = console.log($('#slidewrapper .slide').length);
+    var navBtnId = 0;
+    
+    $('.smooth').click(function() {   
+            navBtnId = $(this).index();
+                $('#slidewrapper').css(
+                    'margin-left','-'+navBtnId+'00%'); 
+    });
 });
