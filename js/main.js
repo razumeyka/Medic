@@ -7,13 +7,13 @@ $(document).ready(function(){
         $(this).parent().addClass('changed');
     });
     
-    var slideNow = 1;   
-    var slideCount = console.log($('#slidewrapper .slide').length);
-    var navBtnId = 0;
+    $('.learn').click(function(event) { 
+        event.preventDefault();
+        $(".form_screen .wpcf7-form").addClass('active');
+    });
     
-    $('.smooth').click(function() {   
-            navBtnId = $(this).index();
-                $('#slidewrapper').css(
-                    'margin-left','-'+navBtnId+'00%'); 
+    $('.back').click(function(event) { 
+        event.preventDefault();
+        $(".form_screen .wpcf7-form").addClass('return');
     });
 });
