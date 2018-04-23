@@ -14,6 +14,6 @@ $(document).ready(function(){
     
     $('.back').click(function(event) { 
         event.preventDefault();
-        $(".form_screen .wpcf7-form").addClass('return');
-    });
+        $(".form_screen .wpcf7-form").removeClass('active');
+    }); 
 });
