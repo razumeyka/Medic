@@ -70,6 +70,7 @@ header .phones {
 header .phones a {
     text-decoration: none;
     font-size: 24px;
+    font-weight: 600;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
@@ -98,13 +99,13 @@ header .phones .free {
 
 .main_screen .main_info {
     max-width: 520px;
+    text-align: left;
 }
 
 .main_screen h1 {
     font-size: 28px;
     font-weight: 600;
     text-transform: uppercase;
-    text-align: left;
     margin: 0;
 }
 
@@ -176,10 +177,15 @@ header .phones .free {
     margin-left: -100%;
 }
 
-.form_screen .wpcf7-form.return  {
-    margin-left: 0;
+.form_screen .first .field {
+    margin: 25px 0 15px;
 }
 
+.form_screen .first .wpcf7-form-control-wrap {
+    display: block;
+    margin: 12px 0;
+}
+    
 .form_screen .field .label {
     font-size: 18px;
     font-weight: 600;
@@ -188,7 +194,6 @@ header .phones .free {
     padding: 15px 52px;
     position: relative;
     border-bottom: 1px solid rgb(154, 154, 154);
-    margin: 25px 0 15px;
 }
 
 .form_screen .field .label::before {
@@ -314,10 +319,10 @@ header .phones .free {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    text-align: left;
-    padding: 23px 25px 16px;
-    margin-top: 50px;
-    line-height: 1;
+    margin-top: 40px;
+    outline: none;
+    line-height: 19px;
+    padding: 22px 25px 19px;  
 }
 
 .form_screen .button .arrow {
@@ -345,7 +350,7 @@ header .phones .free {
     color: rgb(91, 91, 91);
     line-height: 1.2;
     text-align: left;
-    padding: 20px 20px 15px;
+    padding: 17px 17px 13px;
     max-width: 180px;
 }
 
@@ -385,7 +390,7 @@ header .phones .free {
 }
 
 .form_screen .terms_and_prices .prices .price .sum {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 600;
 }
 
@@ -489,7 +494,7 @@ header .phones .free {
     }
     
     header .logo {
-        margin-left: -15px;
+        margin-left: 0;
     }
     
     .main_screen {
@@ -499,6 +504,7 @@ header .phones .free {
     .main_screen .main_info {
         width: 100%;
         max-width: 1279px;
+        text-align: center;
     }
     
     .main_screen img {
@@ -510,7 +516,23 @@ header .phones .free {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 767px) {
+    .form_screen {
+    padding: 40px 20px 0;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    header .wrapper {
+        text-align: center;
+    }
+
+    header .phones {
+        border-left: none;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+    
     .form_screen .terms_and_prices {
         flex-direction: column;
     }
@@ -527,6 +549,10 @@ header .phones .free {
         max-width: 500px;
     }
     
+    .form_screen .button {
+        width: 100%;
+    }
+    
     .form_screen .calculate.button {
         float: none;
         margin: 50px 0 0;
@@ -535,19 +561,6 @@ header .phones .free {
     .form_screen .back.button {
         float: none;
         margin: 30px 0 50px;
-        width: 100%;
-        max-width: 240px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    header .wrapper {
-        text-align: center;
-    }
-
-    header .phones {
-        border-left: none;
-        padding-top: 20px;
     }
 }
 
